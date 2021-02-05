@@ -1,0 +1,6 @@
+*.log
+*.lock
+*.png
+*.json
+reports
+reports/*
