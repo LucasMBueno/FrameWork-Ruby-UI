@@ -10,7 +10,7 @@ Quando('digito {string} e {string}') do |usuario, senha|
 end
 
 Entao('entro no sistema') do
-  expect(home.current_path).eql?('/inventory.html')
+  expect(page).to have_button('ADD TO CART')
 end
 
 Entao('me apresenta a seguinte mensagem {string}') do |mensagem|
