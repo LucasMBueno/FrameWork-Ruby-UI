@@ -7,7 +7,7 @@ Funcionalidade: Realizar o login
 @Estoira_jira_rally @tags @bvt
 Cenario: Realizar o login
   Dado que o usuario esta na tela de login
-  Quando digito "standard_user121" e "secret_sauce"
+  Quando digito "standard_user" e "secret_sauce"
   Entao entro no sistema
 
 @#nome_responsavel
