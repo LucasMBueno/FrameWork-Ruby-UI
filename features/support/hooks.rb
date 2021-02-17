@@ -6,4 +6,10 @@ After do |scenario|
   else
     tirar_foto(@scenario_name.downcase!, 'Passou')
   end
+
+  Allure.add_attachment(
+    name: 'Evidencia',
+    source: File.open(@allure),
+    type: Allure::ContentType::PNG
+  )
 end

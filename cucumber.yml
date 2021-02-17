@@ -1,5 +1,5 @@
 ---
-default: --profile pretty -p homolog -p chrome_headless -p cucumber -p html -p allure
+default: --profile pretty -p homolog -p chrome -p cucumber -p html -p allure
 allure: --format AllureCucumber::CucumberFormatter --out=reports_allure
 pretty: --format pretty
 progress: --format progress
