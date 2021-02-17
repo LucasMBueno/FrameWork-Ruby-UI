@@ -45,6 +45,6 @@ Capybara.configure do |config|
 end
 
 FileUtils.rm_rf('reports')
-FileUtils.rm_rf('reports_allure')
+FileUtils.rm_rf('allure')
 FileUtils.mkdir_p('reports')
-FileUtils.mkdir_p('reports_allure')
+FileUtils.mkdir_p('allure')
