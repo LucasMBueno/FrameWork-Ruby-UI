@@ -30,7 +30,7 @@ World(Helper)
 
 Capybara.register_driver :selenium do |app|
   args = if BROWSER.eql?('chrome')
-           ['--start-fullscreen']
+           ['--start-maximize']
          else
            ['--headless --no-default-browser-check']
          end
@@ -41,7 +41,7 @@ end
 Capybara.configure do |config|
   config.default_driver = :selenium
   config.app_host = CONFIG['url_padrao']
-  config.default_max_wait_time = 5
+  config.default_max_wait_time = 15
 end
 
 FileUtils.rm_rf('reports')

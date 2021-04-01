@@ -3,6 +3,7 @@
 @login
 Funcionalidade: Realizar o login 
 
+@teste
 @#nome_responsavel
 @Estoira_jira_rally @tags @bvt
 Cenario: Realizar o login

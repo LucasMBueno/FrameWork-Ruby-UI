@@ -1,5 +1,5 @@
 class Login < SitePrism::Page
-  set_url '/index.html'
+  set_url '/'
 
   element :ipt_user, '#user-name'
   element :ipt_password, '#password'
