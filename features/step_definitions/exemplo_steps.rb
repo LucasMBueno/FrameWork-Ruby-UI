@@ -10,9 +10,9 @@ Quando('digito {string} e {string}') do |usuario, senha|
 end
 
 Entao('entro no sistema') do
-  expect(page).to have_button('ADD TO CART')
+  expect(page).to have_button('Add to cart')
 end
 
 Entao('me apresenta a seguinte mensagem {string}') do |mensagem|
-  expect(home.h3_erro_login).eql?(mensagem)
+  expect(home.h3_erro_login.text).to eq(mensagem)
 end
